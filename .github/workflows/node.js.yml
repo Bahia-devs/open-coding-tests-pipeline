@@ -10,8 +10,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
-
+  unit-tests:
     runs-on: ubuntu-latest
 
     strategy:
@@ -26,5 +25,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
-    - run: npm test
+    - name: Configure .env
+      run: cp ./.env.example .env.test
+    
+    - name: Intalling dependencies
+      run: npm ci
+    
+    - name: Running tests
+      run: npm test
