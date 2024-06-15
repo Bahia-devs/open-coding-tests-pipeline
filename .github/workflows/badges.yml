@@ -65,7 +65,6 @@ jobs:
     - name: Create badges branch
       run: |
         git checkout -b badges
-        git pull origin badges
 
     - name: Configure .env
       run: cp ./.env.example .env.test
