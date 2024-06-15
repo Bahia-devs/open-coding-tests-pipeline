@@ -57,14 +57,15 @@ jobs:
     - name: Check if branch exists and delete it
       run: |
         BRANCH_NAME="badges"
-        if git show-ref --verify --quiet refs/heads/$BRANCH_NAME; then
+        if git ls-remote --heads origin $BRANCH_NAME | grep -q $BRANCH_NAME; then
           echo "Branch $BRANCH_NAME exists. Deleting it."
-          git branch -D $BRANCH_NAME
           git push origin --delete $BRANCH_NAME
         fi
 
     - name: Create badges branch
-      run: git checkout -b badges
+      run: |
+        git checkout -b badges
+        git pull origin badges
 
     - name: Configure .env
       run: cp ./.env.example .env.test
