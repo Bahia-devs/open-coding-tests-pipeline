@@ -1,8 +1,8 @@
-![Branches](./badges/coverage-branches.svg)
-![Functions](./badges/coverage-functions.svg)
-![Lines](./badges/coverage-lines.svg)
-![Statements](./badges/coverage-statements.svg)
-![Jest coverage](./badges/coverage-jest%20coverage.svg)
+![Branches](https://github.com/Bahia-devs/open-coding-tests-pipeline/blob/badges/badges/coverage-branches.svg)
+![Functions](https://github.com/Bahia-devs/open-coding-tests-pipeline/blob/badges/badges/coverage-functions.svg)
+![Lines](https://github.com/Bahia-devs/open-coding-tests-pipeline/blob/badges/badges/coverage-lines.svg)
+![Statements](https://github.com/Bahia-devs/open-coding-tests-pipeline/blob/badges/badges/coverage-statements.svg)
+![Jest coverage](https://github.com/Bahia-devs/open-coding-tests-pipeline/blob/badges/badges/coverage-jest%20coverage.svg)
 
 # Open-Coding Tests Pipeline com GitHub Actions
 
