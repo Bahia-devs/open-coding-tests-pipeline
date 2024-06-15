@@ -63,8 +63,7 @@ jobs:
         fi
 
     - name: Create badges branch
-      run: |
-        git checkout -b badges
+      run: git checkout -b badges
 
     - name: Configure .env
       run: cp ./.env.example .env.test
