@@ -20,6 +20,7 @@
     "strictPropertyInitialization": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
+    "allowJs": true,
     "paths": {
       "@services/*": ["./src/services/*"],
       "@repositories/*": ["./src/repositories/*"]
